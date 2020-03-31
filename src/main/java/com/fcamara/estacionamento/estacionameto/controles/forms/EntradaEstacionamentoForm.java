@@ -22,6 +22,7 @@ public class EntradaEstacionamentoForm {
 
     @NotNull
     private LocalDateTime horaEntrada;
+
     private LocalDateTime horaSaida;
 
     public EntradaEstacionamentoForm(Long id, @NotNull Long veiculo, @NotNull Long estabelecimento, @NotNull LocalDateTime horaEntrada, LocalDateTime horaSaida) {
