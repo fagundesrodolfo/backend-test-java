@@ -19,7 +19,7 @@ public class EstabelecimentoForm {
 
     @NotNull
     @NotEmpty
-    @Length(max = 14)
+    @Length(max = 18)
     @Length(min = 14)
     private String cnpj;
 
@@ -35,12 +35,10 @@ public class EstabelecimentoForm {
     private String telefone;
 
     @NotNull
-    @NotEmpty
     @Min(0)
     private Integer quantidadeDeVagasParaMotos;
 
     @NotNull
-    @NotEmpty
     @Min(0)
     private Integer quantidadeDeVagasParaCarros;
 

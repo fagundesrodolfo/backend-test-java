@@ -23,7 +23,6 @@ public class EstabelecimentoControler {
     @Autowired
     private EstabelecimentoRepository estabelecimentoRepository;
 
-
     @GetMapping
     public ResponseEntity<List<EstabelecimentoDTO>> listaEstabelecimentos() {
 
