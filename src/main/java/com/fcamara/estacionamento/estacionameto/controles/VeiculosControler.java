@@ -60,7 +60,7 @@ public class VeiculosControler {
 
     @PostMapping
     @Transactional
-    public ResponseEntity<VeiculoDTO> cadastraVeiculo(@RequestBody @Valid VeiculoForm form, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<VeiculoDTO> cadastraVeiculo(@RequestBody @Valid VeiculoForm form) {
 
         Veiculo veiculo = form.getVeiculo();
 

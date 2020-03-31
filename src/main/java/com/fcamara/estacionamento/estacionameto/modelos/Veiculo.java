@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Objects;
 
 @Entity
 public class Veiculo {
@@ -27,6 +28,19 @@ public class Veiculo {
         this.cor = cor;
         this.placa = placa;
         this.tipo = tipo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Veiculo veiculo = (Veiculo) o;
+        return id.equals(veiculo.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     public Long getId() {
